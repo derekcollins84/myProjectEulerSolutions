@@ -1,18 +1,22 @@
-import math
+'''
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
 
+What is the 10 001st prime number?
+'''
 primeArray = []
 x = 2
 
 def primeCheck(num):
-    for i in range(2, int(math.sqrt(num)) + 1):
-        if (num % i) == 0:
+    for prime in primeArray:
+        if num % prime == 0:
+            return False
+        if prime > int(num ** 0.5) + 1:
             break
-    else:
-        return True
+    return True
 
 while len(primeArray) < 10001:
     if primeCheck(x):
         primeArray.append(x)
-    x = x + 1
+    x += 1
 
 print(primeArray[-1])
