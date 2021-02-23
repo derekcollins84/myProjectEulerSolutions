@@ -1,6 +1,6 @@
 {
     "files.autoSave": "afterDelay",
-    "editor.fontSize": 20,
+    "editor.fontSize": 18,
     "editor.fontFamily": "'monospace','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.cursorStyle": "block"
 }

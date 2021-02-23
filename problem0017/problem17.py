@@ -10,7 +10,7 @@ dictionary = {0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',
 6:'six',7:"seven",8:"eight",9:'nine',10:'ten',11:'eleven',
 12:'twelve',13:'thirteen',14:'fourteen',15:'fifteen',
 16:'sixteen',17:'seventeen',18:'eighteen',19:'nineteen',
-20:'twenty',30:'thirty',40:'fourty',50:'fifty',60:'sixty',
+20:'twenty',30:'thirty',40:'forty',50:'fifty',60:'sixty',
 70:'seventy',80:'eighty',90:'ninety',100:'onehundred',
 200:'twohundred',300:'threehundred',400:'fourhundred',
 500:'fivehundred',600:'sixhundred',700:'sevenhundred',
@@ -19,30 +19,32 @@ dictionary = {0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',
 total = 0
 
 def numToText(num):
+
     if num in dictionary:
         return dictionary[num]
+
     elif len(str(num)) == 2:
         firstDigit = int(str(num)[0]) * 10
         secondDigit = int(str(num)[1])
         return dictionary[firstDigit] + dictionary[secondDigit]
-    elif len(str(num)) == 3 and str(num)[1] not in ['0','1']\
-        and str(num)[2] != '0':
+
+    elif len(str(num)) == 3:
         firstDigit = int(str(num)[0]) * 100
-        secondDigit = int(str(num)[1]) * 10
-        thirdDigit = int(str(num)[2])
-        return dictionary[firstDigit] + 'and' +\
-        dictionary[secondDigit] + dictionary[thirdDigit]
 
+        if str(num)[1] == '0':
+            thirdDigit = int(str(num)[2])
+            return dictionary[firstDigit] + 'and' + dictionary[thirdDigit]
 
-        
-  #  elif str(num)[1] == '0':
-  #      firstDigit = int(str(num)[0]) * 100
-  #      thirdDigit = int(str(num)[2])
-  #      return dictionary[firstDigit] + 'and' + dictionary[thirdDigit]
-  #  elif str(num)[1] != '2':
-  #      firstDigit = int(str(num)[0]) * 100
-  #      secondDigit = int(str(num)[1]) * 10 + int(str(num)[2])
-  #      return dictionary[firstDigit] + 'and' + dictionary[secondDigit]
+        elif str(num)[1] == '1' or str(num)[2] == '0':
+            endNumber = int(str(num)[1]+str(num)[2])
+            return dictionary[firstDigit] + 'and' + dictionary[endNumber]
 
-for i in range (110,135):
+        elif str(num)[1] in ['2','3','4','5','6','7','8','9']:
+            secondDigit = int(str(num)[1]) * 10
+            thirdDigit = int(str(num)[2])
+            return dictionary[firstDigit] + 'and' + dictionary[secondDigit] + dictionary[thirdDigit]
+
+for i in range (1,1001):
+    total += len(numToText(i))
     print(numToText(i))
+    print(total)

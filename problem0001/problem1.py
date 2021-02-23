@@ -11,9 +11,9 @@ for testNum in range(1,1000):
     testNum % 5 == 0:
         returnedValues.append(testNum)
 
-for x in range(len(returnedValues)):
+for i in range(len(returnedValues)):
     sumOfReturnedValues = \
         sumOfReturnedValues \
-        + returnedValues[x]
+        + returnedValues[i]
 
 print(sumOfReturnedValues)

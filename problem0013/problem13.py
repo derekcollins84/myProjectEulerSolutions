@@ -210,3 +210,4 @@ for number in numbers:
     total += int(number)
     
 print(str(total)[1:10])
+
