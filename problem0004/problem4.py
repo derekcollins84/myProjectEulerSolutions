@@ -9,7 +9,7 @@ largestPalindrome = 0
 def palindromeCheck(num):
     strNum = str(num)
 
-    if strNum == strNum(: : -1]:
+    if strNum == strNum[:: -1]:
         return True
 
 

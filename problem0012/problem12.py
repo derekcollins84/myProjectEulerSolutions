@@ -19,13 +19,13 @@ What is the value of the first triangle number to have over five hundred divisor
 import time
 
 startTime = time.process_time()
-numArray = (1]
+numArray = [1]
 arrayPosition = 0
 count = 2
 
 
 def findDivisors(num):
-    divisorsArray = (]
+    divisorsArray = []
     for i in range(1, int(num ** 0.5)):
         if num % i == 0:
             divisorsArray.append(i)
@@ -33,10 +33,10 @@ def findDivisors(num):
     return len(divisorsArray)
 
 
-while findDivisors(numArray(-1]) < 500:
-    numArray.append(numArray(arrayPosition]+count)
+while findDivisors(numArray[-1]) < 500:
+    numArray.append(numArray[arrayPosition]+count)
     arrayPosition += 1
     count += 1
 
-print(numArray(-1])
+print(numArray[-1])
 print(round(time.process_time() - startTime, 2), "seconds")

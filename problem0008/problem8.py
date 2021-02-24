@@ -49,19 +49,19 @@ numberString =\
 highestMultiple = 0
 
 for i in range(987):
-    currentMultiple = int(numberString(i])\
-        * int(numberString(i+1])\
-        * int(numberString(i+2])\
-        * int(numberString(i+3])\
-        * int(numberString(i+4])\
-        * int(numberString(i+5])\
-        * int(numberString(i+6])\
-        * int(numberString(i+7])\
-        * int(numberString(i+8])\
-        * int(numberString(i+9])\
-        * int(numberString(i+10])\
-        * int(numberString(i+11])\
-        * int(numberString(i+12])\
+    currentMultiple = int(numberString[i])\
+        * int(numberString[i+1])\
+        * int(numberString[i+2])\
+        * int(numberString[i+3])\
+        * int(numberString[i+4])\
+        * int(numberString[i+5])\
+        * int(numberString[i+6])\
+        * int(numberString[i+7])\
+        * int(numberString[i+8])\
+        * int(numberString[i+9])\
+        * int(numberString[i+10])\
+        * int(numberString[i+11])\
+        * int(numberString[i+12])\
 
     if currentMultiple > highestMultiple:
         highestMultiple = currentMultiple

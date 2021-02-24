@@ -7,7 +7,7 @@ import math
 
 
 def primeFactorCheck(num):
-    primeFactors = (]
+    primeFactors = []
 
     while num % 2 == 0:
         primeFactors.append(2)
@@ -26,4 +26,4 @@ def primeFactorCheck(num):
 
 primeArray = primeFactorCheck(600851475143)
 
-print(primeArray(-1])
+print(primeArray[-1])

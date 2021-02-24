@@ -3,7 +3,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 '''
-returnedValues = (]
+returnedValues = []
 sumOfReturnedValues = 0
 
 for testNum in range(1, 1000):
@@ -14,6 +14,6 @@ for testNum in range(1, 1000):
 for i in range(len(returnedValues)):
     sumOfReturnedValues = \
         sumOfReturnedValues \
-        + returnedValues(i]
+        + returnedValues[i]
 
 print(sumOfReturnedValues)

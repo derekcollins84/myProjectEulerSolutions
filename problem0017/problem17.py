@@ -22,28 +22,28 @@ total = 0
 def numToText(num):
 
     if num in dictionary:
-        return dictionary(num]
+        return dictionary[num]
 
     elif len(str(num)) == 2:
-        firstDigit = int(str(num)(0]) * 10
-        secondDigit = int(str(num)(1])
-        return dictionary(firstDigit] + dictionary(secondDigit]
+        firstDigit = int(str(num)[0]) * 10
+        secondDigit = int(str(num)[1])
+        return dictionary[firstDigit] + dictionary[secondDigit]
 
     elif len(str(num)) == 3:
-        firstDigit = int(str(num)(0]) * 100
+        firstDigit = int(str(num)[0]) * 100
 
-        if str(num)(1] == '0':
-            thirdDigit = int(str(num)(2])
-            return dictionary(firstDigit] + 'and' + dictionary(thirdDigit]
+        if str(num)[1] == '0':
+            thirdDigit = int(str(num)[2])
+            return dictionary[firstDigit] + 'and' + dictionary[thirdDigit]
 
-        elif str(num)(1] == '1' or str(num)(2] == '0':
-            endNumber = int(str(num)(1]+str(num)(2])
-            return dictionary(firstDigit] + 'and' + dictionary(endNumber]
+        elif str(num)[1] == '1' or str(num)[2] == '0':
+            endNumber = int(str(num)[1]+str(num)[2])
+            return dictionary[firstDigit] + 'and' + dictionary[endNumber]
 
-        elif str(num)(1] in ('2', '3', '4', '5', '6', '7', '8', '9']:
-            secondDigit = int(str(num)(1]) * 10
-            thirdDigit = int(str(num)(2])
-            return dictionary(firstDigit] + 'and' + dictionary(secondDigit] + dictionary(thirdDigit]
+        elif str(num)[1] in ['2', '3', '4', '5', '6', '7', '8', '9']:
+            secondDigit = int(str(num)[1]) * 10
+            thirdDigit = int(str(num)[2])
+            return dictionary[firstDigit] + 'and' + dictionary[secondDigit] + dictionary[thirdDigit]
 
 
 for i in range(1, 1001):

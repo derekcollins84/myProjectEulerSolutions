@@ -3,7 +3,7 @@ By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that 
 
 What is the 10 001st prime number?
 '''
-primeArray = (]
+primeArray = []
 x = 2
 
 
@@ -21,4 +21,4 @@ while len(primeArray) < 10001:
         primeArray.append(x)
     x += 1
 
-print(primeArray(-1])
+print(primeArray[-1])

@@ -6,8 +6,8 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 
 def findDivisibles(num):
-    checkList = (11, 13, 14, 16, 17, 18, 19, 20]
-    divisibles = (x for x in checkList if num % x == 0]
+    checkList = [11, 13, 14, 16, 17, 18, 19, 20]
+    divisibles = [x for x in checkList if num % x == 0]
     return len(divisibles)
 
 
