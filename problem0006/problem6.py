@@ -7,6 +7,8 @@ Hence the difference between the sum of the squares of the first ten natural num
 3025 - 385 = 2640
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 '''
+
+
 def sumOfSquares(num):
     answer = 0
     for x in range(1, (num + 1)):
@@ -14,11 +16,13 @@ def sumOfSquares(num):
         answer = answer + y
     return answer
 
+
 def squareSum(num):
     y = 0
-    for x in range(1,(num + 1)):
+    for x in range(1, (num + 1)):
         y = y + x
     answer = y ** 2
     return answer
+
 
 print(squareSum(100) - sumOfSquares(100))

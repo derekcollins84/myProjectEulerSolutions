@@ -4,5 +4,5 @@
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 '''
 import numpy as np
-num = np.lcm.reduce(range(1,20))
+num = np.lcm.reduce(range(1, 20))
 print(num)

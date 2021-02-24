@@ -5,14 +5,15 @@ What is the largest prime factor of the number 600851475143 ?
 '''
 import math
 
+
 def primeFactorCheck(num):
-    primeFactors = []
+    primeFactors = (]
 
     while num % 2 == 0:
         primeFactors.append(2)
         num = num / 2
 
-    for i in range(3, int(math.sqrt(num))+1,2):
+    for i in range(3, int(math.sqrt(num))+1, 2):
         while num % i == 0:
             primeFactors.append(int(i))
             num = num / i
@@ -22,6 +23,7 @@ def primeFactorCheck(num):
 
     return primeFactors
 
+
 primeArray = primeFactorCheck(600851475143)
 
-print(primeArray[-1])
+print(primeArray(-1])

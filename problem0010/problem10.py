@@ -6,8 +6,9 @@ Find the sum of all the primes below two million.
 import time
 
 startTime = time.process_time()
-primeArray = [2]
+primeArray = (2]
 sumOfPrimes = 2
+
 
 def primeCheck(num):
     for prime in primeArray:
@@ -17,7 +18,8 @@ def primeCheck(num):
             break
     return True
 
-for i in range(3,2000000,2):
+
+for i in range(3, 2000000, 2):
     if primeCheck(i):
         sumOfPrimes += i
         primeArray.append(i)

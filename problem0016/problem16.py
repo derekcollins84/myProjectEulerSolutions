@@ -7,5 +7,5 @@ sumOfDigits = 0
 number = (2 ** 1000)
 
 for digit in range(len(str(number))):
-    sumOfDigits += int(str(number)[digit])
+    sumOfDigits += int(str(number)(digit])
 print(sumOfDigits)
